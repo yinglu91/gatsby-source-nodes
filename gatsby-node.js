@@ -20,22 +20,26 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
     // A Node is the smallest unit of data in Gatsby.
     actions.createNode(node)
   })
-
-  // allTestNode   -- one node only
-  // const nodeData = {
-  //   title: "Test Node",
-  //   description: "Testing the node ",
-  // }
-
-  // const newNode = {
-  //   ...nodeData,
-
-  //   id: createNodeId("TestNode-testid"),
-  //   internal: {
-  //     type: "TestNode",
-  //     contentDigest: createContentDigest(nodeData),
-  //   },
-  // }
-
-  // actions.createNode(newNode)
 }
+
+/*
+// allTestNode   -- one node only
+
+  const nodeData = {
+    title: "Test Node",
+    description: "Testing the node ",
+  }
+
+  const newNode = {
+    title: nodeData.title,
+    description: nodeData.description,
+
+    id: createNodeId("TestNode-testid"),
+    internal: {
+      type: "TestNode",
+      contentDigest: createContentDigest(nodeData),
+    },
+  }
+
+  actions.createNode(newNode)
+  */
